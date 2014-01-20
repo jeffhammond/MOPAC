@@ -19,8 +19,11 @@
       integer :: i 
       logical :: exists 
       character :: line*80 
-      external getarg
-      integer, external :: iargc
+      ! neither getarg nor iargc should be external, per
+      ! http://gcc.gnu.org/ml/fortran/2007-01/msg00236.html
+      !external getarg
+      !integer, external :: iargc
+      integer :: iargc
       save i 
 !-----------------------------------------------
 !

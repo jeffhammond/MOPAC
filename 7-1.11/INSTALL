@@ -1,0 +1,27 @@
+You can compile and install this package using commands
+
+	./autogen.sh
+	./configure
+	make
+	make install
+
+In installation only the libmopac library is installed, not the standalone
+mopac7 executable which is also generated in the compilation stage.
+
+You can use the run_mopac7 script to start the standalone mopac7 application,
+for example to run some of the test files:
+
+	./run_mopac7 tests/force
+
+20051011 ; the mopac7 package should now be gcc-4 compliant, but if you still
+wish to use an older compiler, you need to do the following:
+
+        CC=gcc-3.2 ./configure
+
+This makes sure that gcc-3 compiler is used.
+
+20051106: If building on Mac OS X or Darwin, Geoff Hutchison recommends
+using Fink and:
+
+CFLAGS="-I/sw/include -fno-common" LDFLAGS="-L/sw/lib -Wl,-undefined \
+-Wl,dynamic_lookup -Wl,-m -Wl,bind_at_load" ./configure

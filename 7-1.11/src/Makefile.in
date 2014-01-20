@@ -1,0 +1,561 @@
+# Makefile.in generated automatically by automake 1.4-p6 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999, 2001 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+host_alias = @host_alias@
+host_triplet = @host@
+AR = @AR@
+AS = @AS@
+CC = @CC@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DLLTOOL = @DLLTOOL@
+ECHO = @ECHO@
+EGREP = @EGREP@
+EXEEXT = @EXEEXT@
+F77 = @F77@
+GCJ = @GCJ@
+GCJFLAGS = @GCJFLAGS@
+HAVE_LIB = @HAVE_LIB@
+LIB = @LIB@
+LIBTOOL = @LIBTOOL@
+LN_S = @LN_S@
+LTLIB = @LTLIB@
+MAKEINFO = @MAKEINFO@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+RANLIB = @RANLIB@
+RC = @RC@
+SHELL = @SHELL@
+STRIP = @STRIP@
+VERSION = @VERSION@
+top_builddir_ = @top_builddir_@
+
+lib_LTLIBRARIES = libmopac7.la
+
+libmopac7_la_SOURCES =  		aababc.c addfck.c addhcr.c addnuc.c analyt.c 		anavib.c axis.c block.c bonds.c brlzon.c 		btoc.c calpar.c capcor.c cdiag.c chrge.c 		cnvg.c compfg.c consts.c cqden.c datin.c 		dcart.c delmol.c delri.c denrot.c densit.c 		depvar.c deri0.c deri1.c deri2.c deri21.c 		deri22.c deri23.c deritr.c deriv.c dernvo.c 		ders.c dfock2.c dfpsav.c dgemm.c dgemv.c 		dger.c dgetf2.c dgetrf.c dgetri.c diag.c 		diat.c diat2.c diegrd.c dielen.c diis.c 		dijkl1.c dijkl2.c dipind.c dipole.c dlaswp.c 		dofs.c dot.c drc.c drcout.c dtrmm.c 		dtrmv.c dtrsm.c dtrti2.c dtrtri.c dvfill.c 		ef.c enpart.c esp.c etime.c exchng.c 		fdate.c ffhpol.c flepo.c fmat.c fock1.c 		fock2.c force.c formxy.c forsav.c frame.c 		freqcy.c geout.c geoutg.c getgeg.c getgeo.c 		getsym.c gettxt.c gmetry.c gover.c  greenf.c 		grid.c h1elec.c haddon.c hcore.c helect.c 		hqrii.c ijkl.c ilaenv.c initsv.c interp.c 		iter.c jcarin.c linmin.c local.c locmin.c 		lsame.c makpol.c mamult.c matou1.c matout.c 		matpak.c meci.c mecid.c mecih.c mecip.c 		moldat.c molval.c mullik.c mult.c nllsq.c 		nuchar.c parsav.c partxy.c pathk.c paths.c 		perm.c polar.c powsav.c powsq.c prtdrc.c 		quadr.c react1.c reada.c readmo.c refer.c 		repp.c rotat.c rotate.c rsp.c search.c 		second.c setupg.c solrot.c swap.c sympro.c 		symtry.c symtrz.c thermo.c timer.c timout.c 		update.c upsurf.c vecprt.c writmo.c wrtkey.c 		wrttxt.c xerbla.c xyzint.c 		mopac7lib.c libmopac7.c
+
+
+libmopac7includedir = $(includedir)/mopac7
+
+libmopac7include_HEADERS = libmopac7.h
+
+@HAVE_F2C_TRUE@noinst_PROGRAMS = mopac7
+@HAVE_F2C_TRUE@mopac7_SOURCES = mopac7app.c
+@HAVE_F2C_TRUE@mopac7_LDFLAGS = -lmopac7 -lf2c -lm
+mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+CONFIG_CLEAN_FILES = 
+LTLIBRARIES =  $(lib_LTLIBRARIES)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) 
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+libmopac7_la_LDFLAGS = 
+libmopac7_la_LIBADD = 
+libmopac7_la_OBJECTS =  aababc.lo addfck.lo addhcr.lo addnuc.lo \
+analyt.lo anavib.lo axis.lo block.lo bonds.lo brlzon.lo btoc.lo \
+calpar.lo capcor.lo cdiag.lo chrge.lo cnvg.lo compfg.lo consts.lo \
+cqden.lo datin.lo dcart.lo delmol.lo delri.lo denrot.lo densit.lo \
+depvar.lo deri0.lo deri1.lo deri2.lo deri21.lo deri22.lo deri23.lo \
+deritr.lo deriv.lo dernvo.lo ders.lo dfock2.lo dfpsav.lo dgemm.lo \
+dgemv.lo dger.lo dgetf2.lo dgetrf.lo dgetri.lo diag.lo diat.lo diat2.lo \
+diegrd.lo dielen.lo diis.lo dijkl1.lo dijkl2.lo dipind.lo dipole.lo \
+dlaswp.lo dofs.lo dot.lo drc.lo drcout.lo dtrmm.lo dtrmv.lo dtrsm.lo \
+dtrti2.lo dtrtri.lo dvfill.lo ef.lo enpart.lo esp.lo etime.lo exchng.lo \
+fdate.lo ffhpol.lo flepo.lo fmat.lo fock1.lo fock2.lo force.lo \
+formxy.lo forsav.lo frame.lo freqcy.lo geout.lo geoutg.lo getgeg.lo \
+getgeo.lo getsym.lo gettxt.lo gmetry.lo gover.lo greenf.lo grid.lo \
+h1elec.lo haddon.lo hcore.lo helect.lo hqrii.lo ijkl.lo ilaenv.lo \
+initsv.lo interp.lo iter.lo jcarin.lo linmin.lo local.lo locmin.lo \
+lsame.lo makpol.lo mamult.lo matou1.lo matout.lo matpak.lo meci.lo \
+mecid.lo mecih.lo mecip.lo moldat.lo molval.lo mullik.lo mult.lo \
+nllsq.lo nuchar.lo parsav.lo partxy.lo pathk.lo paths.lo perm.lo \
+polar.lo powsav.lo powsq.lo prtdrc.lo quadr.lo react1.lo reada.lo \
+readmo.lo refer.lo repp.lo rotat.lo rotate.lo rsp.lo search.lo \
+second.lo setupg.lo solrot.lo swap.lo sympro.lo symtry.lo symtrz.lo \
+thermo.lo timer.lo timout.lo update.lo upsurf.lo vecprt.lo writmo.lo \
+wrtkey.lo wrttxt.lo xerbla.lo xyzint.lo mopac7lib.lo libmopac7.lo
+@HAVE_F2C_TRUE@noinst_PROGRAMS =  mopac7$(EXEEXT)
+PROGRAMS =  $(noinst_PROGRAMS)
+
+@HAVE_F2C_TRUE@mopac7_OBJECTS =  mopac7app.$(OBJEXT)
+mopac7_LDADD = $(LDADD)
+mopac7_DEPENDENCIES = 
+CFLAGS = @CFLAGS@
+COMPILE = $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+CCLD = $(CC)
+LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(LDFLAGS) -o $@
+HEADERS =  $(libmopac7include_HEADERS)
+
+DIST_COMMON =  Makefile.am Makefile.in
+
+
+DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+
+TAR = tar
+GZIP_ENV = --best
+SOURCES = $(libmopac7_la_SOURCES) $(mopac7_SOURCES)
+OBJECTS = $(libmopac7_la_OBJECTS) $(mopac7_OBJECTS)
+
+all: all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .lo .o .obj .s
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.ac $(ACLOCAL_M4) 
+	cd $(top_srcdir) && $(AUTOMAKE) --gnu --include-deps src/Makefile
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	  && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-libLTLIBRARIES:
+
+clean-libLTLIBRARIES:
+	-test -z "$(lib_LTLIBRARIES)" || rm -f $(lib_LTLIBRARIES)
+
+distclean-libLTLIBRARIES:
+
+maintainer-clean-libLTLIBRARIES:
+
+install-libLTLIBRARIES: $(lib_LTLIBRARIES)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(libdir)
+	@list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo "$(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(libdir)/$$p"; \
+	    $(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(libdir)/$$p; \
+	  else :; fi; \
+	done
+
+uninstall-libLTLIBRARIES:
+	@$(NORMAL_UNINSTALL)
+	list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	  $(LIBTOOL)  --mode=uninstall rm -f $(DESTDIR)$(libdir)/$$p; \
+	done
+
+.c.o:
+	$(COMPILE) -c $<
+
+# FIXME: We should only use cygpath when building on Windows,
+# and only if it is available.
+.c.obj:
+	$(COMPILE) -c `cygpath -w $<`
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+	-rm -f *.$(OBJEXT)
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+.c.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.s.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.S.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+libmopac7.la: $(libmopac7_la_OBJECTS) $(libmopac7_la_DEPENDENCIES)
+	$(LINK) -rpath $(libdir) $(libmopac7_la_LDFLAGS) $(libmopac7_la_OBJECTS) $(libmopac7_la_LIBADD) $(LIBS)
+
+mostlyclean-noinstPROGRAMS:
+
+clean-noinstPROGRAMS:
+	-test -z "$(noinst_PROGRAMS)" || rm -f $(noinst_PROGRAMS)
+
+distclean-noinstPROGRAMS:
+
+maintainer-clean-noinstPROGRAMS:
+
+mopac7$(EXEEXT): $(mopac7_OBJECTS) $(mopac7_DEPENDENCIES)
+	@rm -f mopac7$(EXEEXT)
+	$(LINK) $(mopac7_LDFLAGS) $(mopac7_OBJECTS) $(mopac7_LDADD) $(LIBS)
+
+install-libmopac7includeHEADERS: $(libmopac7include_HEADERS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(libmopac7includedir)
+	@list='$(libmopac7include_HEADERS)'; for p in $$list; do \
+	  if test -f "$$p"; then d= ; else d="$(srcdir)/"; fi; \
+	  echo " $(INSTALL_DATA) $$d$$p $(DESTDIR)$(libmopac7includedir)/$$p"; \
+	  $(INSTALL_DATA) $$d$$p $(DESTDIR)$(libmopac7includedir)/$$p; \
+	done
+
+uninstall-libmopac7includeHEADERS:
+	@$(NORMAL_UNINSTALL)
+	list='$(libmopac7include_HEADERS)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(libmopac7includedir)/$$p; \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	  && mkid -f$$here/ID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || (cd $(srcdir) && etags -o $$here/TAGS $(ETAGS_ARGS) $$tags  $$unique $(LISP))
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = src
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pr $$d/$$file $(distdir)/$$file; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	    || cp -p $$d/$$file $(distdir)/$$file || :; \
+	  fi; \
+	done
+aababc.lo aababc.o : aababc.c
+addfck.lo addfck.o : addfck.c
+addhcr.lo addhcr.o : addhcr.c
+addnuc.lo addnuc.o : addnuc.c
+analyt.lo analyt.o : analyt.c
+anavib.lo anavib.o : anavib.c
+axis.lo axis.o : axis.c
+block.lo block.o : block.c
+bonds.lo bonds.o : bonds.c
+brlzon.lo brlzon.o : brlzon.c
+btoc.lo btoc.o : btoc.c
+calpar.lo calpar.o : calpar.c
+capcor.lo capcor.o : capcor.c
+cdiag.lo cdiag.o : cdiag.c
+chrge.lo chrge.o : chrge.c
+cnvg.lo cnvg.o : cnvg.c
+compfg.lo compfg.o : compfg.c
+consts.lo consts.o : consts.c
+cqden.lo cqden.o : cqden.c
+datin.lo datin.o : datin.c
+dcart.lo dcart.o : dcart.c
+delmol.lo delmol.o : delmol.c
+delri.lo delri.o : delri.c
+denrot.lo denrot.o : denrot.c
+densit.lo densit.o : densit.c
+depvar.lo depvar.o : depvar.c
+deri0.lo deri0.o : deri0.c
+deri1.lo deri1.o : deri1.c
+deri2.lo deri2.o : deri2.c
+deri21.lo deri21.o : deri21.c
+deri22.lo deri22.o : deri22.c
+deri23.lo deri23.o : deri23.c
+deritr.lo deritr.o : deritr.c
+deriv.lo deriv.o : deriv.c
+dernvo.lo dernvo.o : dernvo.c
+ders.lo ders.o : ders.c
+dfock2.lo dfock2.o : dfock2.c
+dfpsav.lo dfpsav.o : dfpsav.c
+dgemm.lo dgemm.o : dgemm.c
+dgemv.lo dgemv.o : dgemv.c
+dger.lo dger.o : dger.c
+dgetf2.lo dgetf2.o : dgetf2.c
+dgetrf.lo dgetrf.o : dgetrf.c
+dgetri.lo dgetri.o : dgetri.c
+diag.lo diag.o : diag.c
+diat.lo diat.o : diat.c
+diat2.lo diat2.o : diat2.c
+diegrd.lo diegrd.o : diegrd.c
+dielen.lo dielen.o : dielen.c
+diis.lo diis.o : diis.c
+dijkl1.lo dijkl1.o : dijkl1.c
+dijkl2.lo dijkl2.o : dijkl2.c
+dipind.lo dipind.o : dipind.c
+dipole.lo dipole.o : dipole.c
+dlaswp.lo dlaswp.o : dlaswp.c
+dofs.lo dofs.o : dofs.c
+dot.lo dot.o : dot.c
+drc.lo drc.o : drc.c
+drcout.lo drcout.o : drcout.c
+dtrmm.lo dtrmm.o : dtrmm.c
+dtrmv.lo dtrmv.o : dtrmv.c
+dtrsm.lo dtrsm.o : dtrsm.c
+dtrti2.lo dtrti2.o : dtrti2.c
+dtrtri.lo dtrtri.o : dtrtri.c
+dvfill.lo dvfill.o : dvfill.c
+ef.lo ef.o : ef.c
+enpart.lo enpart.o : enpart.c
+esp.lo esp.o : esp.c
+etime.lo etime.o : etime.c
+exchng.lo exchng.o : exchng.c
+fdate.lo fdate.o : fdate.c
+ffhpol.lo ffhpol.o : ffhpol.c
+flepo.lo flepo.o : flepo.c
+fmat.lo fmat.o : fmat.c
+fock1.lo fock1.o : fock1.c
+fock2.lo fock2.o : fock2.c
+force.lo force.o : force.c
+formxy.lo formxy.o : formxy.c
+forsav.lo forsav.o : forsav.c
+frame.lo frame.o : frame.c
+freqcy.lo freqcy.o : freqcy.c
+geout.lo geout.o : geout.c
+geoutg.lo geoutg.o : geoutg.c
+getgeg.lo getgeg.o : getgeg.c
+getgeo.lo getgeo.o : getgeo.c
+getsym.lo getsym.o : getsym.c
+gettxt.lo gettxt.o : gettxt.c
+gmetry.lo gmetry.o : gmetry.c
+gover.lo gover.o : gover.c
+greenf.lo greenf.o : greenf.c
+grid.lo grid.o : grid.c
+h1elec.lo h1elec.o : h1elec.c
+haddon.lo haddon.o : haddon.c
+hcore.lo hcore.o : hcore.c
+helect.lo helect.o : helect.c
+hqrii.lo hqrii.o : hqrii.c
+ijkl.lo ijkl.o : ijkl.c
+ilaenv.lo ilaenv.o : ilaenv.c
+initsv.lo initsv.o : initsv.c
+interp.lo interp.o : interp.c
+iter.lo iter.o : iter.c
+jcarin.lo jcarin.o : jcarin.c
+libmopac7.lo libmopac7.o : libmopac7.c
+linmin.lo linmin.o : linmin.c
+local.lo local.o : local.c
+locmin.lo locmin.o : locmin.c
+lsame.lo lsame.o : lsame.c
+makpol.lo makpol.o : makpol.c
+mamult.lo mamult.o : mamult.c
+matou1.lo matou1.o : matou1.c
+matout.lo matout.o : matout.c
+matpak.lo matpak.o : matpak.c
+meci.lo meci.o : meci.c
+mecid.lo mecid.o : mecid.c
+mecih.lo mecih.o : mecih.c
+mecip.lo mecip.o : mecip.c
+moldat.lo moldat.o : moldat.c
+molval.lo molval.o : molval.c
+mopac7app.o: mopac7app.c
+mopac7lib.lo mopac7lib.o : mopac7lib.c
+mullik.lo mullik.o : mullik.c
+mult.lo mult.o : mult.c
+nllsq.lo nllsq.o : nllsq.c
+nuchar.lo nuchar.o : nuchar.c
+parsav.lo parsav.o : parsav.c
+partxy.lo partxy.o : partxy.c
+pathk.lo pathk.o : pathk.c
+paths.lo paths.o : paths.c
+perm.lo perm.o : perm.c
+polar.lo polar.o : polar.c
+powsav.lo powsav.o : powsav.c
+powsq.lo powsq.o : powsq.c
+prtdrc.lo prtdrc.o : prtdrc.c
+quadr.lo quadr.o : quadr.c
+react1.lo react1.o : react1.c
+reada.lo reada.o : reada.c
+readmo.lo readmo.o : readmo.c
+refer.lo refer.o : refer.c
+repp.lo repp.o : repp.c
+rotat.lo rotat.o : rotat.c
+rotate.lo rotate.o : rotate.c
+rsp.lo rsp.o : rsp.c
+search.lo search.o : search.c
+second.lo second.o : second.c
+setupg.lo setupg.o : setupg.c
+solrot.lo solrot.o : solrot.c
+swap.lo swap.o : swap.c
+sympro.lo sympro.o : sympro.c
+symtry.lo symtry.o : symtry.c
+symtrz.lo symtrz.o : symtrz.c
+thermo.lo thermo.o : thermo.c
+timer.lo timer.o : timer.c
+timout.lo timout.o : timout.c
+update.lo update.o : update.c
+upsurf.lo upsurf.o : upsurf.c
+vecprt.lo vecprt.o : vecprt.c
+writmo.lo writmo.o : writmo.c
+wrtkey.lo wrtkey.o : wrtkey.c
+wrttxt.lo wrttxt.o : wrttxt.c
+xerbla.lo xerbla.o : xerbla.c
+xyzint.lo xyzint.o : xyzint.c
+
+info-am:
+info: info-am
+dvi-am:
+dvi: dvi-am
+check-am: all-am
+check: check-am
+installcheck-am:
+installcheck: installcheck-am
+install-exec-am: install-libLTLIBRARIES
+install-exec: install-exec-am
+
+install-data-am: install-libmopac7includeHEADERS
+install-data: install-data-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-am
+uninstall-am: uninstall-libLTLIBRARIES uninstall-libmopac7includeHEADERS
+uninstall: uninstall-am
+all-am: Makefile $(LTLIBRARIES) $(PROGRAMS) $(HEADERS)
+all-redirect: all-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs:
+	$(mkinstalldirs)  $(DESTDIR)$(libdir) $(DESTDIR)$(libmopac7includedir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-libLTLIBRARIES mostlyclean-compile \
+		mostlyclean-libtool mostlyclean-noinstPROGRAMS \
+		mostlyclean-tags mostlyclean-generic
+
+mostlyclean: mostlyclean-am
+
+clean-am:  clean-libLTLIBRARIES clean-compile clean-libtool \
+		clean-noinstPROGRAMS clean-tags clean-generic \
+		mostlyclean-am
+
+clean: clean-am
+
+distclean-am:  distclean-libLTLIBRARIES distclean-compile \
+		distclean-libtool distclean-noinstPROGRAMS \
+		distclean-tags distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-am
+
+maintainer-clean-am:  maintainer-clean-libLTLIBRARIES \
+		maintainer-clean-compile maintainer-clean-libtool \
+		maintainer-clean-noinstPROGRAMS maintainer-clean-tags \
+		maintainer-clean-generic distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-am
+
+.PHONY: mostlyclean-libLTLIBRARIES distclean-libLTLIBRARIES \
+clean-libLTLIBRARIES maintainer-clean-libLTLIBRARIES \
+uninstall-libLTLIBRARIES install-libLTLIBRARIES mostlyclean-compile \
+distclean-compile clean-compile maintainer-clean-compile \
+mostlyclean-libtool distclean-libtool clean-libtool \
+maintainer-clean-libtool mostlyclean-noinstPROGRAMS \
+distclean-noinstPROGRAMS clean-noinstPROGRAMS \
+maintainer-clean-noinstPROGRAMS uninstall-libmopac7includeHEADERS \
+install-libmopac7includeHEADERS tags mostlyclean-tags distclean-tags \
+clean-tags maintainer-clean-tags distdir info-am info dvi-am dvi check \
+check-am installcheck-am installcheck install-exec-am install-exec \
+install-data-am install-data install-am install uninstall-am uninstall \
+all-redirect all-am all installdirs mostlyclean-generic \
+distclean-generic clean-generic maintainer-clean-generic clean \
+mostlyclean distclean maintainer-clean
+
+# the executable is not built!
+# so nothing here...
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:

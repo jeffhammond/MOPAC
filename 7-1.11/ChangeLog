@@ -1,0 +1,438 @@
+2006-03-29 10:45  thassine
+
+	* INSTALL: documentation update.
+
+2006-03-29 10:40  thassine
+
+	* .cvsignore: .cvsignore update
+
+2006-03-29 10:37  thassine
+
+	* aclocal.m4, autogen.sh, config.guess, config.sub, ltmain.sh:
+	  added autogen.sh and removed some unnecessary files.
+
+2006-03-03 18:07  ghutchis
+
+	* config.log: Don't track config.log in CVS -- it's a build source
+	  file and is machine-dependent.
+
+2006-02-16 13:07  thassine
+
+	* Makefile.in, aclocal.m4, config.guess, config.log, config.sub,
+	  configure, configure.ac, libmopac7.pc.in, ltmain.sh,
+	  src/Makefile.in, tests/Makefile.in: updated the configure script
+	  ; added -lg2c in .pc file.
+
+2006-01-06 18:20  ghutchis
+
+	* .cvsignore, ChangeLog, Makefile.in, aclocal.m4, config.guess,
+	  config.log, config.sub, configure, ltmain.sh, src/.cvsignore,
+	  src/Makefile.in, tests/Makefile.in:	      * ltmain.sh,
+	  config.sub, config.guess: Updated with libtool 1.5.22
+		  version, which fixes some problems on Mac OS X.
+
+2006-01-06 18:19  ghutchis
+
+	* INSTALL:	   * INSTALL: Added notes for Mac OS X users.
+
+2005-11-10 10:13  thassine
+
+	* aclocal.m4, config.guess, config.log, config.sub, configure,
+	  configure.ac, ltmain.sh: changed the version number to 1.11 after
+	  a release.
+
+2005-10-14 14:41  thassine
+
+	* ChangeLog: updated the ChangeLog file ; this is now v1.10 release
+	  candidate 3.
+
+2005-10-14 14:39  thassine
+
+	* config.log, configure, configure.ac: a configure script fix added
+	  from Jean Brefort.
+
+2005-10-11 11:35  thassine
+
+	* INSTALL, README, config.log, fortran/cdiag.f, src/cdiag.c:
+	  changes in cdiag.f ; should now work with gcc-4.0
+
+2005-10-10 11:08  thassine
+
+	* ChangeLog: updated the ChangeLog file ; now ready for a v1.10
+	  release.
+
+2005-08-23 13:31  thassine
+
+	* .cvsignore, config.log, configure, configure.ac,
+	  fortran/README.txt, fortran/esp.f, src/.cvsignore,
+	  src/Makefile.am, src/Makefile.in, src/esp.c, src/libmopac7.c,
+	  src/libmopac7.h: v1.10 is here ; added libmopac7.h that can be
+	  included by external programs (does not include f2h.h).
+
+2005-08-19 13:39  thassine
+
+	* INSTALL, Makefile.in, aclocal.m4, config.log, configure,
+	  fortran/README.txt, fortran/etime.c, fortran/mopac.f,
+	  fortran/mopac7app.f, fortran/mopac7lib.f, fortran/mopaclib.f,
+	  fortran/c_src_bak/etime.c, fortran/c_src_bak/fdate.c,
+	  src/Makefile.in, src/aababc.c, src/addfck.c, src/addhcr.c,
+	  src/addnuc.c, src/analyt.c, src/anavib.c, src/axis.c,
+	  src/block.c, src/bonds.c, src/brlzon.c, src/btoc.c, src/calpar.c,
+	  src/capcor.c, src/cdiag.c, src/chrge.c, src/cnvg.c, src/compfg.c,
+	  src/consts.c, src/cqden.c, src/datin.c, src/dcart.c,
+	  src/delmol.c, src/delri.c, src/denrot.c, src/densit.c,
+	  src/depvar.c, src/deri0.c, src/deri1.c, src/deri2.c,
+	  src/deri21.c, src/deri22.c, src/deri23.c, src/deritr.c,
+	  src/deriv.c, src/dernvo.c, src/ders.c, src/dfock2.c,
+	  src/dfpsav.c, src/dgemm.c, src/dgemv.c, src/dger.c, src/dgetf2.c,
+	  src/dgetrf.c, src/dgetri.c, src/diag.c, src/diat.c, src/diat2.c,
+	  src/diegrd.c, src/dielen.c, src/diis.c, src/dijkl1.c,
+	  src/dijkl2.c, src/dipind.c, src/dipole.c, src/dlaswp.c,
+	  src/dofs.c, src/dot.c, src/drc.c, src/drcout.c, src/dtrmm.c,
+	  src/dtrmv.c, src/dtrsm.c, src/dtrti2.c, src/dtrtri.c,
+	  src/dvfill.c, src/ef.c, src/enpart.c, src/esp.c, src/exchng.c,
+	  src/ffhpol.c, src/flepo.c, src/fmat.c, src/fock1.c, src/fock2.c,
+	  src/force.c, src/formxy.c, src/forsav.c, src/frame.c,
+	  src/freqcy.c, src/geout.c, src/geoutg.c, src/getgeg.c,
+	  src/getgeo.c, src/getsym.c, src/gettxt.c, src/gmetry.c,
+	  src/gover.c, src/greenf.c, src/grid.c, src/h1elec.c,
+	  src/haddon.c, src/hcore.c, src/helect.c, src/hqrii.c, src/ijkl.c,
+	  src/ilaenv.c, src/initsv.c, src/interp.c, src/iter.c,
+	  src/jcarin.c, src/linmin.c, src/local.c, src/locmin.c,
+	  src/lsame.c, src/makpol.c, src/mamult.c, src/matou1.c,
+	  src/matout.c, src/matpak.c, src/meci.c, src/mecid.c, src/mecih.c,
+	  src/mecip.c, src/moldat.c, src/molval.c, src/mopac7app.c,
+	  src/mopac7lib.c, src/mullik.c, src/mult.c, src/nllsq.c,
+	  src/nuchar.c, src/parsav.c, src/partxy.c, src/pathk.c,
+	  src/paths.c, src/perm.c, src/polar.c, src/powsav.c, src/powsq.c,
+	  src/prtdrc.c, src/quadr.c, src/react1.c, src/reada.c,
+	  src/readmo.c, src/refer.c, src/repp.c, src/rotat.c, src/rotate.c,
+	  src/rsp.c, src/search.c, src/second.c, src/setupg.c,
+	  src/solrot.c, src/swap.c, src/sympro.c, src/symtry.c,
+	  src/symtrz.c, src/thermo.c, src/timer.c, src/timout.c,
+	  src/update.c, src/upsurf.c, src/vecprt.c, src/writmo.c,
+	  src/wrtkey.c, src/wrttxt.c, src/xerbla.c, src/xyzint.c,
+	  tests/Makefile.in: added documentation, updated the .c from .f
+
+2005-07-05 10:43  thassine
+
+	* config.log, configure, configure.ac: a minor tweak in configure ;
+	  make sure that local copies of f2c.h do not leave hanging around.
+
+2005-07-01 12:00  thassine
+
+	* ChangeLog, config.log, configure, configure.ac: updated the
+	  changelog ; ready for a release now.
+
+2005-06-30 11:40  thassine
+
+	* Makefile.in, aclocal.m4, config.guess, config.log, config.sub,
+	  configure, configure.ac, configure.in, ltmain.sh,
+	  src/Makefile.in, tests/Makefile.in: some changes in configuration
+	  scripts.
+
+2005-03-21 14:29  thassine
+
+	* config.guess, config.log, config.sub, ltmain.sh,
+	  src/Makefile.SIMPLE: added an alternative simple makefile in src/
+	  subdir.
+
+2004-12-10 11:58  thassine
+
+	* Makefile.am, Makefile.in, aababc.c, addfck.c, addhcr.c, addnuc.c,
+	  analyt.c, anavib.c, axis.c, block.c, bonds.c, brlzon.c, btoc.c,
+	  calpar.c, capcor.c, cdiag.c, chrge.c, cnvg.c, compfg.c,
+	  config.log, configure, configure.in, consts.c, cqden.c, datin.c,
+	  dcart.c, delmol.c, delri.c, denrot.c, densit.c, depvar.c,
+	  deri0.c, deri1.c, deri2.c, deri21.c, deri22.c, deri23.c,
+	  deritr.c, deriv.c, dernvo.c, ders.c, dfock2.c, dfpsav.c, dgemm.c,
+	  dgemv.c, dger.c, dgetf2.c, dgetrf.c, dgetri.c, diag.c, diat.c,
+	  diat2.c, diegrd.c, dielen.c, diis.c, dijkl1.c, dijkl2.c,
+	  dipind.c, dipole.c, dlaswp.c, dofs.c, dot.c, drc.c, drcout.c,
+	  dtrmm.c, dtrmv.c, dtrsm.c, dtrti2.c, dtrtri.c, dvfill.c, ef.c,
+	  enpart.c, esp.c, etime.c, exchng.c, fdate.c, ffhpol.c, flepo.c,
+	  fmat.c, fock1.c, fock2.c, force.c, formxy.c, forsav.c, frame.c,
+	  freqcy.c, geout.c, geoutg.c, getgeg.c, getgeo.c, getsym.c,
+	  gettxt.c, gmetry.c, gover.c, greenf.c, grid.c, h1elec.c,
+	  haddon.c, hcore.c, helect.c, hqrii.c, ijkl.c, ilaenv.c, initsv.c,
+	  interp.c, iter.c, jcarin.c, linmin.c, local.c, locmin.c, lsame.c,
+	  makpol.c, mamult.c, matou1.c, matout.c, matpak.c, meci.c,
+	  mecid.c, mecih.c, mecip.c, moldat.c, molval.c, mopac7app.c,
+	  mopac7lib.c, mullik.c, mult.c, nllsq.c, nuchar.c, parsav.c,
+	  partxy.c, pathk.c, paths.c, perm.c, polar.c, powsav.c, powsq.c,
+	  prtdrc.c, quadr.c, react1.c, reada.c, readmo.c, refer.c, repp.c,
+	  rotat.c, rotate.c, rsp.c, run_mopac7, search.c, second.c,
+	  setupg.c, solrot.c, swap.c, sympro.c, symtry.c, symtrz.c,
+	  thermo.c, timer.c, timout.c, update.c, upsurf.c, vecprt.c,
+	  writmo.c, wrtkey.c, wrttxt.c, xerbla.c, xyzint.c,
+	  src/Makefile.am, src/Makefile.in, src/aababc.c, src/addfck.c,
+	  src/addhcr.c, src/addnuc.c, src/analyt.c, src/anavib.c,
+	  src/axis.c, src/block.c, src/bonds.c, src/brlzon.c, src/btoc.c,
+	  src/calpar.c, src/capcor.c, src/cdiag.c, src/chrge.c, src/cnvg.c,
+	  src/compfg.c, src/consts.c, src/cqden.c, src/datin.c,
+	  src/dcart.c, src/delmol.c, src/delri.c, src/denrot.c,
+	  src/densit.c, src/depvar.c, src/deri0.c, src/deri1.c,
+	  src/deri2.c, src/deri21.c, src/deri22.c, src/deri23.c,
+	  src/deritr.c, src/deriv.c, src/dernvo.c, src/ders.c,
+	  src/dfock2.c, src/dfpsav.c, src/dgemm.c, src/dgemv.c, src/dger.c,
+	  src/dgetf2.c, src/dgetrf.c, src/dgetri.c, src/diag.c, src/diat.c,
+	  src/diat2.c, src/diegrd.c, src/dielen.c, src/diis.c,
+	  src/dijkl1.c, src/dijkl2.c, src/dipind.c, src/dipole.c,
+	  src/dlaswp.c, src/dofs.c, src/dot.c, src/drc.c, src/drcout.c,
+	  src/dtrmm.c, src/dtrmv.c, src/dtrsm.c, src/dtrti2.c,
+	  src/dtrtri.c, src/dvfill.c, src/ef.c, src/enpart.c, src/esp.c,
+	  src/etime.c, src/exchng.c, src/fdate.c, src/ffhpol.c,
+	  src/flepo.c, src/fmat.c, src/fock1.c, src/fock2.c, src/force.c,
+	  src/formxy.c, src/forsav.c, src/frame.c, src/freqcy.c,
+	  src/geout.c, src/geoutg.c, src/getgeg.c, src/getgeo.c,
+	  src/getsym.c, src/gettxt.c, src/gmetry.c, src/gover.c,
+	  src/greenf.c, src/grid.c, src/h1elec.c, src/haddon.c,
+	  src/hcore.c, src/helect.c, src/hqrii.c, src/ijkl.c, src/ilaenv.c,
+	  src/initsv.c, src/interp.c, src/iter.c, src/jcarin.c,
+	  src/linmin.c, src/local.c, src/locmin.c, src/lsame.c,
+	  src/makpol.c, src/mamult.c, src/matou1.c, src/matout.c,
+	  src/matpak.c, src/meci.c, src/mecid.c, src/mecih.c, src/mecip.c,
+	  src/moldat.c, src/molval.c, src/mopac7app.c, src/mopac7lib.c,
+	  src/mullik.c, src/mult.c, src/nllsq.c, src/nuchar.c,
+	  src/parsav.c, src/partxy.c, src/pathk.c, src/paths.c, src/perm.c,
+	  src/polar.c, src/powsav.c, src/powsq.c, src/prtdrc.c,
+	  src/quadr.c, src/react1.c, src/reada.c, src/readmo.c,
+	  src/refer.c, src/repp.c, src/rotat.c, src/rotate.c, src/rsp.c,
+	  src/search.c, src/second.c, src/setupg.c, src/solrot.c,
+	  src/swap.c, src/sympro.c, src/symtry.c, src/symtrz.c,
+	  src/thermo.c, src/timer.c, src/timout.c, src/update.c,
+	  src/upsurf.c, src/vecprt.c, src/writmo.c, src/wrtkey.c,
+	  src/wrttxt.c, src/xerbla.c, src/xyzint.c: moved source files
+	  under src/ subdir.
+
+2004-12-10 09:22  thassine
+
+	* config.log, configure, configure.in: now the libf2c/g2c
+	  configuration works ; a local f2c.h header file is created if
+	  libf2c is not present.
+
+2004-12-08 16:57  thassine
+
+	* Makefile.am, configure.in: just some whitespace fixes.
+
+2004-12-08 16:37  thassine
+
+	* Makefile.am, Makefile.in, aclocal.m4, config.log, configure,
+	  configure.in: added a patch (Jean Brefort) to handle better
+	  libf2c/g2c issues (the executable built only if libf2c
+	  available).
+
+2004-11-09 15:39  thassine
+
+	* ChangeLog, INSTALL, NEWS, README, run_mopac7: this is a release
+	  candidate 1 for v1.0
+
+2004-11-02 15:29  thassine
+
+	* Makefile.am, Makefile.in, config.guess, config.log: make install
+	  now installs also the libmopac7.pc file.
+
+2004-08-25 13:36  thassine
+
+	* Makefile.am, Makefile.in, README, config.guess, config.sub,
+	  configure, configure.in, ltmain.sh, m7MAIN.c, mopac7app.c,
+	  mopac7lib.c, tests/.cvsignore: added fixes to automake-related
+	  files.
+
+2004-08-13 15:03  thassine
+
+	* AUTHORS, COPYING, ChangeLog, INSTALL, Makefile.am, Makefile.in,
+	  NEWS, README, aclocal.m4, config.log, configure, configure.in,
+	  depcomp, ltmain.sh, missing, mkinstalldirs, tests/Makefile.am,
+	  tests/Makefile.in: added a new configuration system (Jean
+	  Brefort).
+
+2003-12-19 16:44  thassine
+
+	* Makefile.in, README, config.log, configure, configure.in,
+	  run_mopac7: both the app and the lib should work now.
+
+2003-12-19 15:14  thassine
+
+	* Makefile.SIMPLE, Makefile.in, config.log, libmopac7.pc.in: should
+	  now work as a static library.
+
+2003-12-19 13:53  thassine
+
+	* Makefile.in, config.guess, config.log, config.sub, configure,
+	  configure.in, install-sh: added the configuration scripts.
+
+2003-07-11 16:39  thassine
+
+	* .cvsignore, Makefile.in, README, aababc.c, addfck.c, addhcr.c,
+	  addnuc.c, analyt.c, anavib.c, axis.c, block.c, bonds.c, brlzon.c,
+	  btoc.c, calpar.c, capcor.c, cdiag.c, chrge.c, cnvg.c, compfg.c,
+	  config.log, consts.c, cqden.c, datin.c, dcart.c, delmol.c,
+	  delri.c, denrot.c, densit.c, depvar.c, deri0.c, deri1.c, deri2.c,
+	  deri21.c, deri22.c, deri23.c, deritr.c, deriv.c, dernvo.c,
+	  ders.c, dfock2.c, dfpsav.c, dgemm.c, dgemv.c, dger.c, dgetf2.c,
+	  dgetrf.c, dgetri.c, diag.c, diat.c, diat2.c, diegrd.c, dielen.c,
+	  diis.c, dijkl1.c, dijkl2.c, dipind.c, dipole.c, dlaswp.c, dofs.c,
+	  dot.c, drc.c, drcout.c, dtrmm.c, dtrmv.c, dtrsm.c, dtrti2.c,
+	  dtrtri.c, dvfill.c, ef.c, enpart.c, esp.c, etime.c, exchng.c,
+	  fdate.c, ffhpol.c, flepo.c, fmat.c, fock1.c, fock2.c, force.c,
+	  formxy.c, forsav.c, frame.c, freqcy.c, geout.c, geoutg.c,
+	  getgeg.c, getgeo.c, getsym.c, gettxt.c, gmetry.c, gover.c,
+	  greenf.c, grid.c, h1elec.c, haddon.c, hcore.c, helect.c, hqrii.c,
+	  ijkl.c, ilaenv.c, initsv.c, interp.c, iter.c, jcarin.c, linmin.c,
+	  local.c, locmin.c, lsame.c, makpol.c, mamult.c, matou1.c,
+	  matout.c, matpak.c, meci.c, mecid.c, mecih.c, mecip.c,
+	  Makefile.SIMPLE, m7MAIN.c, moldat.c, molval.c, mullik.c, mult.c,
+	  nllsq.c, nuchar.c, parsav.c, partxy.c, pathk.c, paths.c, perm.c,
+	  polar.c, powsav.c, powsq.c, prtdrc.c, quadr.c, react1.c, reada.c,
+	  readmo.c, refer.c, repp.c, rotat.c, rotate.c, rsp.c, run_mopac7,
+	  search.c, second.c, setupg.c, solrot.c, swap.c, sympro.c,
+	  symtry.c, symtrz.c, thermo.c, timer.c, timout.c, update.c,
+	  upsurf.c, vecprt.c, writmo.c, wrtkey.c, wrttxt.c, xerbla.c,
+	  xyzint.c, fortran/SIZES, fortran/aababc.f, fortran/addfck.f,
+	  fortran/addhcr.f, fortran/addnuc.f, fortran/analyt.f,
+	  fortran/anavib.f, fortran/axis.f, fortran/block.f,
+	  fortran/bonds.f, fortran/brlzon.f, fortran/btoc.f,
+	  fortran/calpar.f, fortran/capcor.f, fortran/cdiag.f,
+	  fortran/chrge.f, fortran/cnvg.f, fortran/compfg.f,
+	  fortran/consts.f, fortran/cqden.f, fortran/datin.f,
+	  fortran/dcart.f, fortran/delmol.f, fortran/delri.f,
+	  fortran/denrot.f, fortran/densit.f, fortran/depvar.f,
+	  fortran/deri0.f, fortran/deri1.f, fortran/deri2.f,
+	  fortran/deri21.f, fortran/deri22.f, fortran/deri23.f,
+	  fortran/deritr.f, fortran/deriv.f, fortran/dernvo.f,
+	  fortran/ders.f, fortran/dfock2.f, fortran/dfpsav.f,
+	  fortran/dgemm.f, fortran/dgemv.f, fortran/dger.f,
+	  fortran/dgetf2.f, fortran/dgetrf.f, fortran/dgetri.f,
+	  fortran/diag.f, fortran/diat.f, fortran/diat2.f,
+	  fortran/diegrd.f, fortran/dielen.f, fortran/diis.f,
+	  fortran/dijkl1.f, fortran/dijkl2.f, fortran/dipind.f,
+	  fortran/dipole.f, fortran/dlaswp.f, fortran/dofs.f,
+	  fortran/dot.f, fortran/drc.f, fortran/drcout.f, fortran/dtrmm.f,
+	  fortran/dtrmv.f, fortran/dtrsm.f, fortran/dtrti2.f,
+	  fortran/dtrtri.f, fortran/dvfill.f, fortran/ef.f,
+	  fortran/enpart.f, fortran/esp.f, fortran/etime.c,
+	  fortran/exchng.f, fortran/fdate.c, fortran/ffhpol.f,
+	  fortran/flepo.f, fortran/fmat.f, fortran/fock1.f,
+	  fortran/fock2.f, fortran/force.f, fortran/formxy.f,
+	  fortran/forsav.f, fortran/frame.f, fortran/freqcy.f,
+	  fortran/geout.f, fortran/geoutg.f, fortran/getgeg.f,
+	  fortran/getgeo.f, fortran/getsym.f, fortran/gettxt.f,
+	  fortran/gmetry.f, fortran/gover.f, fortran/greenf.f,
+	  fortran/grid.f, fortran/h1elec.f, fortran/haddon.f,
+	  fortran/hcore.f, fortran/helect.f, fortran/hqrii.f,
+	  fortran/ijkl.f, fortran/ilaenv.f, fortran/initsv.f,
+	  fortran/interp.f, fortran/iter.f, fortran/jcarin.f,
+	  fortran/linmin.f, fortran/local.f, fortran/locmin.f,
+	  fortran/lsame.f, fortran/makpol.f, fortran/mamult.f,
+	  fortran/matou1.f, fortran/matout.f, fortran/matpak.f,
+	  fortran/meci.f, fortran/mecid.f, fortran/mecih.f,
+	  fortran/mecip.f, fortran/moldat.f, fortran/molval.f,
+	  fortran/mopac.f, fortran/mullik.f, fortran/mult.f,
+	  fortran/nllsq.f, fortran/nuchar.f, fortran/parsav.f,
+	  fortran/partxy.f, fortran/pathk.f, fortran/paths.f,
+	  fortran/perm.f, fortran/polar.f, fortran/powsav.f,
+	  fortran/powsq.f, fortran/prtdrc.f, fortran/quadr.f,
+	  fortran/react1.f, fortran/reada.f, fortran/readmo.f,
+	  fortran/refer.f, fortran/repp.f, fortran/rotat.f,
+	  fortran/rotate.f, fortran/rsp.f, fortran/search.f,
+	  fortran/second.f, fortran/setupg.f, fortran/solrot.f,
+	  fortran/swap.f, fortran/sympro.f, fortran/symtry.f,
+	  fortran/symtrz.f, fortran/thermo.f, fortran/timer.f,
+	  fortran/timout.f, fortran/update.f, fortran/upsurf.f,
+	  fortran/vecprt.f, fortran/writmo.f, fortran/mopaclib.f,
+	  fortran/wrtkey.f, fortran/wrttxt.f, fortran/xerbla.f,
+	  fortran/xyzint.f, tests/1scf.dat, tests/elements.dat,
+	  tests/force.dat, tests/geometry.dat, tests/keys.dat,
+	  tests/nch34+.dat, tests/oldgeo.dat, tests/paras.dat,
+	  tests/test_cos.OUT, tests/test_cos.dat, tests/test_ef_.OUT,
+	  tests/test_ef_.dat, tests/test_gre.OUT, tests/test_gre.dat,
+	  tests/test_pol.OUT, tests/test_pol.dat: Initial revision
+
+2003-07-11 16:39  thassine
+
+	* .cvsignore, Makefile.in, README, aababc.c, addfck.c, addhcr.c,
+	  addnuc.c, analyt.c, anavib.c, axis.c, block.c, bonds.c, brlzon.c,
+	  btoc.c, calpar.c, capcor.c, cdiag.c, chrge.c, cnvg.c, compfg.c,
+	  config.log, consts.c, cqden.c, datin.c, dcart.c, delmol.c,
+	  delri.c, denrot.c, densit.c, depvar.c, deri0.c, deri1.c, deri2.c,
+	  deri21.c, deri22.c, deri23.c, deritr.c, deriv.c, dernvo.c,
+	  ders.c, dfock2.c, dfpsav.c, dgemm.c, dgemv.c, dger.c, dgetf2.c,
+	  dgetrf.c, dgetri.c, diag.c, diat.c, diat2.c, diegrd.c, dielen.c,
+	  diis.c, dijkl1.c, dijkl2.c, dipind.c, dipole.c, dlaswp.c, dofs.c,
+	  dot.c, drc.c, drcout.c, dtrmm.c, dtrmv.c, dtrsm.c, dtrti2.c,
+	  dtrtri.c, dvfill.c, ef.c, enpart.c, esp.c, etime.c, exchng.c,
+	  fdate.c, ffhpol.c, flepo.c, fmat.c, fock1.c, fock2.c, force.c,
+	  formxy.c, forsav.c, frame.c, freqcy.c, geout.c, geoutg.c,
+	  getgeg.c, getgeo.c, getsym.c, gettxt.c, gmetry.c, gover.c,
+	  greenf.c, grid.c, h1elec.c, haddon.c, hcore.c, helect.c, hqrii.c,
+	  ijkl.c, ilaenv.c, initsv.c, interp.c, iter.c, jcarin.c, linmin.c,
+	  local.c, locmin.c, lsame.c, makpol.c, mamult.c, matou1.c,
+	  matout.c, matpak.c, meci.c, mecid.c, mecih.c, mecip.c,
+	  Makefile.SIMPLE, m7MAIN.c, moldat.c, molval.c, mullik.c, mult.c,
+	  nllsq.c, nuchar.c, parsav.c, partxy.c, pathk.c, paths.c, perm.c,
+	  polar.c, powsav.c, powsq.c, prtdrc.c, quadr.c, react1.c, reada.c,
+	  readmo.c, refer.c, repp.c, rotat.c, rotate.c, rsp.c, run_mopac7,
+	  search.c, second.c, setupg.c, solrot.c, swap.c, sympro.c,
+	  symtry.c, symtrz.c, thermo.c, timer.c, timout.c, update.c,
+	  upsurf.c, vecprt.c, writmo.c, wrtkey.c, wrttxt.c, xerbla.c,
+	  xyzint.c, fortran/SIZES, fortran/aababc.f, fortran/addfck.f,
+	  fortran/addhcr.f, fortran/addnuc.f, fortran/analyt.f,
+	  fortran/anavib.f, fortran/axis.f, fortran/block.f,
+	  fortran/bonds.f, fortran/brlzon.f, fortran/btoc.f,
+	  fortran/calpar.f, fortran/capcor.f, fortran/cdiag.f,
+	  fortran/chrge.f, fortran/cnvg.f, fortran/compfg.f,
+	  fortran/consts.f, fortran/cqden.f, fortran/datin.f,
+	  fortran/dcart.f, fortran/delmol.f, fortran/delri.f,
+	  fortran/denrot.f, fortran/densit.f, fortran/depvar.f,
+	  fortran/deri0.f, fortran/deri1.f, fortran/deri2.f,
+	  fortran/deri21.f, fortran/deri22.f, fortran/deri23.f,
+	  fortran/deritr.f, fortran/deriv.f, fortran/dernvo.f,
+	  fortran/ders.f, fortran/dfock2.f, fortran/dfpsav.f,
+	  fortran/dgemm.f, fortran/dgemv.f, fortran/dger.f,
+	  fortran/dgetf2.f, fortran/dgetrf.f, fortran/dgetri.f,
+	  fortran/diag.f, fortran/diat.f, fortran/diat2.f,
+	  fortran/diegrd.f, fortran/dielen.f, fortran/diis.f,
+	  fortran/dijkl1.f, fortran/dijkl2.f, fortran/dipind.f,
+	  fortran/dipole.f, fortran/dlaswp.f, fortran/dofs.f,
+	  fortran/dot.f, fortran/drc.f, fortran/drcout.f, fortran/dtrmm.f,
+	  fortran/dtrmv.f, fortran/dtrsm.f, fortran/dtrti2.f,
+	  fortran/dtrtri.f, fortran/dvfill.f, fortran/ef.f,
+	  fortran/enpart.f, fortran/esp.f, fortran/etime.c,
+	  fortran/exchng.f, fortran/fdate.c, fortran/ffhpol.f,
+	  fortran/flepo.f, fortran/fmat.f, fortran/fock1.f,
+	  fortran/fock2.f, fortran/force.f, fortran/formxy.f,
+	  fortran/forsav.f, fortran/frame.f, fortran/freqcy.f,
+	  fortran/geout.f, fortran/geoutg.f, fortran/getgeg.f,
+	  fortran/getgeo.f, fortran/getsym.f, fortran/gettxt.f,
+	  fortran/gmetry.f, fortran/gover.f, fortran/greenf.f,
+	  fortran/grid.f, fortran/h1elec.f, fortran/haddon.f,
+	  fortran/hcore.f, fortran/helect.f, fortran/hqrii.f,
+	  fortran/ijkl.f, fortran/ilaenv.f, fortran/initsv.f,
+	  fortran/interp.f, fortran/iter.f, fortran/jcarin.f,
+	  fortran/linmin.f, fortran/local.f, fortran/locmin.f,
+	  fortran/lsame.f, fortran/makpol.f, fortran/mamult.f,
+	  fortran/matou1.f, fortran/matout.f, fortran/matpak.f,
+	  fortran/meci.f, fortran/mecid.f, fortran/mecih.f,
+	  fortran/mecip.f, fortran/moldat.f, fortran/molval.f,
+	  fortran/mopac.f, fortran/mullik.f, fortran/mult.f,
+	  fortran/nllsq.f, fortran/nuchar.f, fortran/parsav.f,
+	  fortran/partxy.f, fortran/pathk.f, fortran/paths.f,
+	  fortran/perm.f, fortran/polar.f, fortran/powsav.f,
+	  fortran/powsq.f, fortran/prtdrc.f, fortran/quadr.f,
+	  fortran/react1.f, fortran/reada.f, fortran/readmo.f,
+	  fortran/refer.f, fortran/repp.f, fortran/rotat.f,
+	  fortran/rotate.f, fortran/rsp.f, fortran/search.f,
+	  fortran/second.f, fortran/setupg.f, fortran/solrot.f,
+	  fortran/swap.f, fortran/sympro.f, fortran/symtry.f,
+	  fortran/symtrz.f, fortran/thermo.f, fortran/timer.f,
+	  fortran/timout.f, fortran/update.f, fortran/upsurf.f,
+	  fortran/vecprt.f, fortran/writmo.f, fortran/mopaclib.f,
+	  fortran/wrtkey.f, fortran/wrttxt.f, fortran/xerbla.f,
+	  fortran/xyzint.f, tests/1scf.dat, tests/elements.dat,
+	  tests/force.dat, tests/geometry.dat, tests/keys.dat,
+	  tests/nch34+.dat, tests/oldgeo.dat, tests/paras.dat,
+	  tests/test_cos.OUT, tests/test_cos.dat, tests/test_ef_.OUT,
+	  tests/test_ef_.dat, tests/test_gre.OUT, tests/test_gre.dat,
+	  tests/test_pol.OUT, tests/test_pol.dat: initial import 2003-07-11
+

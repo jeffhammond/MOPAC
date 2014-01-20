@@ -1,0 +1,28 @@
+#! /bin/sh
+if test ! $# -eq 1
+then
+	echo usage : run_mopac7 inputfile
+	exit 1
+fi
+
+if test ! -f $1.dat
+then
+	echo error : inputfile $1.dat not found
+	exit 1
+fi
+
+export FOR005=$1.dat	## input
+export FOR006=$1.out	## output
+export FOR009=$1.res	## restart
+export FOR010=$1.den	## density matrix
+export FOR011=$1.log	## logfile
+export FOR012=$1.arc	## archive/summary file
+
+echo starting mopac7 job $1
+./src/mopac7
+echo mopac7 job $1 finished
+
+if test -f SHUTDOWN
+then
+	rm SHUTDOWN
+fi

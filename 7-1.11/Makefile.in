@@ -1,0 +1,532 @@
+# Makefile.in generated automatically by automake 1.4-p6 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999, 2001 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = .
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+host_alias = @host_alias@
+host_triplet = @host@
+AR = @AR@
+AS = @AS@
+CC = @CC@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DLLTOOL = @DLLTOOL@
+ECHO = @ECHO@
+EGREP = @EGREP@
+EXEEXT = @EXEEXT@
+F77 = @F77@
+GCJ = @GCJ@
+GCJFLAGS = @GCJFLAGS@
+HAVE_LIB = @HAVE_LIB@
+LIB = @LIB@
+LIBTOOL = @LIBTOOL@
+LN_S = @LN_S@
+LTLIB = @LTLIB@
+MAKEINFO = @MAKEINFO@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+RANLIB = @RANLIB@
+RC = @RC@
+SHELL = @SHELL@
+STRIP = @STRIP@
+VERSION = @VERSION@
+top_builddir_ = @top_builddir_@
+
+SUBDIRS = fortran src tests
+
+EXTRA_DIST = run_mopac7
+
+pkgconfigdir = $(libdir)/pkgconfig
+pkgconfig_DATA = libmopac7.pc
+ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
+mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+CONFIG_CLEAN_FILES =  libmopac7.pc
+DATA =  $(pkgconfig_DATA)
+
+DIST_COMMON =  README AUTHORS COPYING ChangeLog INSTALL Makefile.am \
+Makefile.in NEWS aclocal.m4 config.guess config.sub configure \
+configure.ac install-sh libmopac7.pc.in ltmain.sh missing mkinstalldirs
+
+
+DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+
+TAR = tar
+GZIP_ENV = --best
+all: all-redirect
+.SUFFIXES:
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.ac $(ACLOCAL_M4) 
+	cd $(top_srcdir) && $(AUTOMAKE) --gnu --include-deps Makefile
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	  && CONFIG_FILES=$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+$(ACLOCAL_M4):  configure.ac 
+	cd $(srcdir) && $(ACLOCAL)
+
+config.status: $(srcdir)/configure $(CONFIG_STATUS_DEPENDENCIES)
+	$(SHELL) ./config.status --recheck
+$(srcdir)/configure: $(srcdir)/configure.ac $(ACLOCAL_M4) $(CONFIGURE_DEPENDENCIES)
+	cd $(srcdir) && $(AUTOCONF)
+libmopac7.pc: $(top_builddir)/config.status libmopac7.pc.in
+	cd $(top_builddir) && CONFIG_FILES=$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+install-pkgconfigDATA: $(pkgconfig_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(pkgconfigdir)
+	@list='$(pkgconfig_DATA)'; for p in $$list; do \
+	  if test -f $(srcdir)/$$p; then \
+	    echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(pkgconfigdir)/$$p"; \
+	    $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(pkgconfigdir)/$$p; \
+	  else if test -f $$p; then \
+	    echo " $(INSTALL_DATA) $$p $(DESTDIR)$(pkgconfigdir)/$$p"; \
+	    $(INSTALL_DATA) $$p $(DESTDIR)$(pkgconfigdir)/$$p; \
+	  fi; fi; \
+	done
+
+uninstall-pkgconfigDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(pkgconfig_DATA)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(pkgconfigdir)/$$p; \
+	done
+
+# This directory's subdirectories are mostly independent; you can cd
+# into them and run `make' without going through this Makefile.
+# To change the values of `make' variables: instead of editing Makefiles,
+# (1) if the variable is set in `config.status', edit `config.status'
+#     (which will cause the Makefiles to be regenerated when you run `make');
+# (2) otherwise, pass the desired values on the `make' command line.
+
+@SET_MAKE@
+
+all-recursive install-data-recursive install-exec-recursive \
+installdirs-recursive install-recursive uninstall-recursive  \
+check-recursive installcheck-recursive info-recursive dvi-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	dot_seen=no; \
+	target=`echo $@ | sed s/-recursive//`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	  echo "Making $$target in $$subdir"; \
+	  if test "$$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$$target-am"; \
+	  else \
+	    local_target="$$target"; \
+	  fi; \
+	  (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
+	   || case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done; \
+	if test "$$dot_seen" = "no"; then \
+	  $(MAKE) $(AM_MAKEFLAGS) "$$target-am" || exit 1; \
+	fi; test -z "$$fail"
+
+mostlyclean-recursive clean-recursive distclean-recursive \
+maintainer-clean-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	dot_seen=no; \
+	rev=''; list='$(SUBDIRS)'; for subdir in $$list; do \
+	  rev="$$subdir $$rev"; \
+	  test "$$subdir" != "." || dot_seen=yes; \
+	done; \
+	test "$$dot_seen" = "no" && rev=". $$rev"; \
+	target=`echo $@ | sed s/-recursive//`; \
+	for subdir in $$rev; do \
+	  echo "Making $$target in $$subdir"; \
+	  if test "$$subdir" = "."; then \
+	    local_target="$$target-am"; \
+	  else \
+	    local_target="$$target"; \
+	  fi; \
+	  (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
+	   || case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done && test -z "$$fail"
+tags-recursive:
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	  test "$$subdir" = . || (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) tags); \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	  && mkid -f$$here/ID $$unique $(LISP)
+
+TAGS: tags-recursive $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+   if test "$$subdir" = .; then :; else \
+	    test -f $$subdir/TAGS && tags="$$tags -i $$here/$$subdir/TAGS"; \
+   fi; \
+	done; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || (cd $(srcdir) && etags -o $$here/TAGS $(ETAGS_ARGS) $$tags  $$unique $(LISP))
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(PACKAGE)-$(VERSION)
+top_distdir = $(distdir)
+
+# This target untars the dist file and tries a VPATH configuration.  Then
+# it guarantees that the distribution is self-contained by making another
+# tarfile.
+distcheck: dist
+	-rm -rf $(distdir)
+	GZIP=$(GZIP_ENV) $(TAR) zxf $(distdir).tar.gz
+	mkdir $(distdir)/=build
+	mkdir $(distdir)/=inst
+	dc_install_base=`cd $(distdir)/=inst && pwd`; \
+	cd $(distdir)/=build \
+	  && ../configure --srcdir=.. --prefix=$$dc_install_base \
+	  && $(MAKE) $(AM_MAKEFLAGS) \
+	  && $(MAKE) $(AM_MAKEFLAGS) dvi \
+	  && $(MAKE) $(AM_MAKEFLAGS) check \
+	  && $(MAKE) $(AM_MAKEFLAGS) install \
+	  && $(MAKE) $(AM_MAKEFLAGS) installcheck \
+	  && $(MAKE) $(AM_MAKEFLAGS) dist
+	-rm -rf $(distdir)
+	@banner="$(distdir).tar.gz is ready for distribution"; \
+	dashes=`echo "$$banner" | sed s/./=/g`; \
+	echo "$$dashes"; \
+	echo "$$banner"; \
+	echo "$$dashes"
+dist: distdir
+	-chmod -R a+r $(distdir)
+	GZIP=$(GZIP_ENV) $(TAR) chozf $(distdir).tar.gz $(distdir)
+	-rm -rf $(distdir)
+dist-all: distdir
+	-chmod -R a+r $(distdir)
+	GZIP=$(GZIP_ENV) $(TAR) chozf $(distdir).tar.gz $(distdir)
+	-rm -rf $(distdir)
+distdir: $(DISTFILES)
+	-rm -rf $(distdir)
+	mkdir $(distdir)
+	-chmod 777 $(distdir)
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pr $$d/$$file $(distdir)/$$file; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	    || cp -p $$d/$$file $(distdir)/$$file || :; \
+	  fi; \
+	done
+	for subdir in $(SUBDIRS); do \
+	  if test "$$subdir" = .; then :; else \
+	    test -d $(distdir)/$$subdir \
+	    || mkdir $(distdir)/$$subdir \
+	    || exit 1; \
+	    chmod 777 $(distdir)/$$subdir; \
+	    (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) top_distdir=../$(distdir) distdir=../$(distdir)/$$subdir distdir) \
+	      || exit 1; \
+	  fi; \
+	done
+aababc.lo aababc.o : aababc.c f2c.h
+addfck.lo addfck.o : addfck.c f2c.h
+addhcr.lo addhcr.o : addhcr.c f2c.h
+addnuc.lo addnuc.o : addnuc.c f2c.h
+analyt.lo analyt.o : analyt.c f2c.h
+anavib.lo anavib.o : anavib.c f2c.h
+axis.lo axis.o : axis.c f2c.h
+block.lo block.o : block.c f2c.h
+bonds.lo bonds.o : bonds.c f2c.h
+brlzon.lo brlzon.o : brlzon.c f2c.h
+btoc.lo btoc.o : btoc.c f2c.h
+calpar.lo calpar.o : calpar.c f2c.h
+capcor.lo capcor.o : capcor.c f2c.h
+cdiag.lo cdiag.o : cdiag.c f2c.h
+chrge.lo chrge.o : chrge.c f2c.h
+cnvg.lo cnvg.o : cnvg.c f2c.h
+compfg.lo compfg.o : compfg.c f2c.h
+consts.lo consts.o : consts.c f2c.h
+cqden.lo cqden.o : cqden.c f2c.h
+datin.lo datin.o : datin.c f2c.h
+dcart.lo dcart.o : dcart.c f2c.h
+delmol.lo delmol.o : delmol.c f2c.h
+delri.lo delri.o : delri.c f2c.h
+denrot.lo denrot.o : denrot.c f2c.h
+densit.lo densit.o : densit.c f2c.h
+depvar.lo depvar.o : depvar.c f2c.h
+deri0.lo deri0.o : deri0.c f2c.h
+deri1.lo deri1.o : deri1.c f2c.h
+deri2.lo deri2.o : deri2.c f2c.h
+deri21.lo deri21.o : deri21.c f2c.h
+deri22.lo deri22.o : deri22.c f2c.h
+deri23.lo deri23.o : deri23.c f2c.h
+deritr.lo deritr.o : deritr.c f2c.h
+deriv.lo deriv.o : deriv.c f2c.h
+dernvo.lo dernvo.o : dernvo.c f2c.h
+ders.lo ders.o : ders.c f2c.h
+dfock2.lo dfock2.o : dfock2.c f2c.h
+dfpsav.lo dfpsav.o : dfpsav.c f2c.h
+dgemm.lo dgemm.o : dgemm.c f2c.h
+dgemv.lo dgemv.o : dgemv.c f2c.h
+dger.lo dger.o : dger.c f2c.h
+dgetf2.lo dgetf2.o : dgetf2.c f2c.h
+dgetrf.lo dgetrf.o : dgetrf.c f2c.h
+dgetri.lo dgetri.o : dgetri.c f2c.h
+diag.lo diag.o : diag.c f2c.h
+diat.lo diat.o : diat.c f2c.h
+diat2.lo diat2.o : diat2.c f2c.h
+diegrd.lo diegrd.o : diegrd.c f2c.h
+dielen.lo dielen.o : dielen.c f2c.h
+diis.lo diis.o : diis.c f2c.h
+dijkl1.lo dijkl1.o : dijkl1.c f2c.h
+dijkl2.lo dijkl2.o : dijkl2.c f2c.h
+dipind.lo dipind.o : dipind.c f2c.h
+dipole.lo dipole.o : dipole.c f2c.h
+dlaswp.lo dlaswp.o : dlaswp.c f2c.h
+dofs.lo dofs.o : dofs.c f2c.h
+dot.lo dot.o : dot.c f2c.h
+drc.lo drc.o : drc.c f2c.h
+drcout.lo drcout.o : drcout.c f2c.h
+dtrmm.lo dtrmm.o : dtrmm.c f2c.h
+dtrmv.lo dtrmv.o : dtrmv.c f2c.h
+dtrsm.lo dtrsm.o : dtrsm.c f2c.h
+dtrti2.lo dtrti2.o : dtrti2.c f2c.h
+dtrtri.lo dtrtri.o : dtrtri.c f2c.h
+dvfill.lo dvfill.o : dvfill.c f2c.h
+ef.lo ef.o : ef.c f2c.h
+enpart.lo enpart.o : enpart.c f2c.h
+esp.lo esp.o : esp.c f2c.h
+etime.lo etime.o : etime.c
+exchng.lo exchng.o : exchng.c f2c.h
+fdate.lo fdate.o : fdate.c f2c.h
+ffhpol.lo ffhpol.o : ffhpol.c f2c.h
+flepo.lo flepo.o : flepo.c f2c.h
+fmat.lo fmat.o : fmat.c f2c.h
+fock1.lo fock1.o : fock1.c f2c.h
+fock2.lo fock2.o : fock2.c f2c.h
+force.lo force.o : force.c f2c.h
+formxy.lo formxy.o : formxy.c f2c.h
+forsav.lo forsav.o : forsav.c f2c.h
+frame.lo frame.o : frame.c f2c.h
+freqcy.lo freqcy.o : freqcy.c f2c.h
+geout.lo geout.o : geout.c f2c.h
+geoutg.lo geoutg.o : geoutg.c f2c.h
+getgeg.lo getgeg.o : getgeg.c f2c.h
+getgeo.lo getgeo.o : getgeo.c f2c.h
+getsym.lo getsym.o : getsym.c f2c.h
+gettxt.lo gettxt.o : gettxt.c f2c.h
+gmetry.lo gmetry.o : gmetry.c f2c.h
+gover.lo gover.o : gover.c f2c.h
+greenf.lo greenf.o : greenf.c f2c.h
+grid.lo grid.o : grid.c f2c.h
+h1elec.lo h1elec.o : h1elec.c f2c.h
+haddon.lo haddon.o : haddon.c f2c.h
+hcore.lo hcore.o : hcore.c f2c.h
+helect.lo helect.o : helect.c f2c.h
+hqrii.lo hqrii.o : hqrii.c f2c.h
+ijkl.lo ijkl.o : ijkl.c f2c.h
+ilaenv.lo ilaenv.o : ilaenv.c f2c.h
+initsv.lo initsv.o : initsv.c f2c.h
+interp.lo interp.o : interp.c f2c.h
+iter.lo iter.o : iter.c f2c.h
+jcarin.lo jcarin.o : jcarin.c f2c.h
+linmin.lo linmin.o : linmin.c f2c.h
+local.lo local.o : local.c f2c.h
+locmin.lo locmin.o : locmin.c f2c.h
+lsame.lo lsame.o : lsame.c f2c.h
+m7MAIN.lo m7MAIN.o : m7MAIN.c
+makpol.lo makpol.o : makpol.c f2c.h
+mamult.lo mamult.o : mamult.c f2c.h
+matou1.lo matou1.o : matou1.c f2c.h
+matout.lo matout.o : matout.c f2c.h
+matpak.lo matpak.o : matpak.c f2c.h
+meci.lo meci.o : meci.c f2c.h
+mecid.lo mecid.o : mecid.c f2c.h
+mecih.lo mecih.o : mecih.c f2c.h
+mecip.lo mecip.o : mecip.c f2c.h
+moldat.lo moldat.o : moldat.c f2c.h
+molval.lo molval.o : molval.c f2c.h
+mopac7app.o: mopac7app.c
+mopac7lib.lo mopac7lib.o : mopac7lib.c f2c.h
+mullik.lo mullik.o : mullik.c f2c.h
+mult.lo mult.o : mult.c f2c.h
+nllsq.lo nllsq.o : nllsq.c f2c.h
+nuchar.lo nuchar.o : nuchar.c f2c.h
+parsav.lo parsav.o : parsav.c f2c.h
+partxy.lo partxy.o : partxy.c f2c.h
+pathk.lo pathk.o : pathk.c f2c.h
+paths.lo paths.o : paths.c f2c.h
+perm.lo perm.o : perm.c f2c.h
+polar.lo polar.o : polar.c f2c.h
+powsav.lo powsav.o : powsav.c f2c.h
+powsq.lo powsq.o : powsq.c f2c.h
+prtdrc.lo prtdrc.o : prtdrc.c f2c.h
+quadr.lo quadr.o : quadr.c f2c.h
+react1.lo react1.o : react1.c f2c.h
+reada.lo reada.o : reada.c f2c.h
+readmo.lo readmo.o : readmo.c f2c.h
+refer.lo refer.o : refer.c f2c.h
+repp.lo repp.o : repp.c f2c.h
+rotat.lo rotat.o : rotat.c f2c.h
+rotate.lo rotate.o : rotate.c f2c.h
+rsp.lo rsp.o : rsp.c f2c.h
+search.lo search.o : search.c f2c.h
+second.lo second.o : second.c f2c.h
+setupg.lo setupg.o : setupg.c f2c.h
+solrot.lo solrot.o : solrot.c f2c.h
+swap.lo swap.o : swap.c f2c.h
+sympro.lo sympro.o : sympro.c f2c.h
+symtry.lo symtry.o : symtry.c f2c.h
+symtrz.lo symtrz.o : symtrz.c f2c.h
+thermo.lo thermo.o : thermo.c f2c.h
+timer.lo timer.o : timer.c f2c.h
+timout.lo timout.o : timout.c f2c.h
+update.lo update.o : update.c f2c.h
+upsurf.lo upsurf.o : upsurf.c f2c.h
+vecprt.lo vecprt.o : vecprt.c f2c.h
+writmo.lo writmo.o : writmo.c f2c.h
+wrtkey.lo wrtkey.o : wrtkey.c f2c.h
+wrttxt.lo wrttxt.o : wrttxt.c f2c.h
+xerbla.lo xerbla.o : xerbla.c f2c.h
+xyzint.lo xyzint.o : xyzint.c f2c.h
+
+info-am:
+info: info-recursive
+dvi-am:
+dvi: dvi-recursive
+check-am: all-am
+check: check-recursive
+installcheck-am:
+installcheck: installcheck-recursive
+install-exec-am:
+install-exec: install-exec-recursive
+
+install-data-am: install-pkgconfigDATA
+install-data: install-data-recursive
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-recursive
+uninstall-am: uninstall-pkgconfigDATA
+uninstall: uninstall-recursive
+all-am: Makefile $(DATA)
+all-redirect: all-recursive
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs: installdirs-recursive
+installdirs-am:
+	$(mkinstalldirs)  $(DESTDIR)$(pkgconfigdir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-tags mostlyclean-generic
+
+mostlyclean: mostlyclean-recursive
+
+clean-am:  clean-tags clean-generic mostlyclean-am
+
+clean: clean-recursive
+
+distclean-am:  distclean-tags distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-recursive
+	-rm -f config.status
+
+maintainer-clean-am:  maintainer-clean-tags maintainer-clean-generic \
+		distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-recursive
+	-rm -f config.status
+
+.PHONY: uninstall-pkgconfigDATA install-pkgconfigDATA \
+install-data-recursive uninstall-data-recursive install-exec-recursive \
+uninstall-exec-recursive installdirs-recursive uninstalldirs-recursive \
+all-recursive check-recursive installcheck-recursive info-recursive \
+dvi-recursive mostlyclean-recursive distclean-recursive clean-recursive \
+maintainer-clean-recursive tags tags-recursive mostlyclean-tags \
+distclean-tags clean-tags maintainer-clean-tags distdir info-am info \
+dvi-am dvi check check-am installcheck-am installcheck install-exec-am \
+install-exec install-data-am install-data install-am install \
+uninstall-am uninstall all-redirect all-am all installdirs-am \
+installdirs mostlyclean-generic distclean-generic clean-generic \
+maintainer-clean-generic clean mostlyclean distclean maintainer-clean
+
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:

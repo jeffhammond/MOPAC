@@ -1,0 +1,7 @@
+prefix=@prefix@
+libdir=${prefix}/lib
+
+Name: libmopac7
+Description: A library for semi-empirical QM calculations.
+Version: @VERSION@
+Libs: -L${libdir} -lmopac7 -lg2c
